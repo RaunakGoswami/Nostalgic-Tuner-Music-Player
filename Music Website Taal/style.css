@@ -41,7 +41,7 @@ nav ul li{
 }
 
 .container{
-    min-height: 72vh;
+    min-height: 76vh;
     background-color: black;
     color: aliceblue;
     font-family: 'Varela Round' , sans-serif;
@@ -50,7 +50,7 @@ nav ul li{
     width: 75%;
     border-radius: 12px;
     padding: 8px;
-    background-image: url(/photo-1420161900862-9a86fa1f5c79.jpg);
+    background-image: url(/photo-1420161900862-9a86fa1f5c79.jpg) ;
 
 }
 
@@ -94,9 +94,9 @@ nav ul li{
     display: flex;
     background-color: white;
     
-    border-radius: 18px;
+    border-radius: 40px;
     color: black;
-    height: 35px;
+    height: 45px;
     padding: 1px 28px;
     margin: 27px 8px;
     justify-content: space-between;
@@ -105,12 +105,12 @@ nav ul li{
 }
 
 .songItem img{
-    width: 58px;
+    width: 60px;
     margin: 0px 0px;
     padding-left: 0;
     padding-right: 15px;
     padding-top: 0px;
-    border-radius: 0;
+    
 }
 
 .songlistplay{
@@ -130,6 +130,7 @@ nav ul li{
 .songInfo{
     position: absolute;
     left: 10vw;
+    height: 5vh;
 }
 
 .songInfo img{
@@ -137,3 +138,60 @@ opacity:0;
 
    transition:opacity 0.8s ease-in;
 }
+.timespan i {
+    cursor: pointer;
+    position: absolute;
+    padding: 1px 5px;
+}
+@media(max-width:1250px){
+
+   .songItemContainer{
+    width: 50vw;
+   }
+
+   .fa-3x {
+    font-size: 2em;
+}
+}
+@media(max-width:755px){
+
+    .songItemContainer{
+     width: 74vw;
+
+    }
+    .bottom{
+        position: absolute;
+        height: 130px;
+        background-color: black;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+    }
+    .songInfo {
+      display: contents;
+      padding-bottom: 4px;
+    }
+
+   
+ }
+@media(max-width:400px){
+
+    .songItemContainer{
+     width: 73vw;
+    }
+    .songItem {
+        display: flex;
+        background-color: white;
+        border-radius: 46px;
+        color: black;
+        height: 46px;
+        padding: 15px 28px;
+        margin: 27px 8px;
+        justify-content: space-between;
+        align-items: center;
+    }
+ }
